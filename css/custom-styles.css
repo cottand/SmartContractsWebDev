@@ -36,6 +36,6 @@ section {
 }
 
 .padded-left {
-    padding: 100px 0;
+    padding-left: 15px;
     text-align: left;
 }
