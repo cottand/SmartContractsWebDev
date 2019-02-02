@@ -24,3 +24,18 @@ section {
     background-color: #1CBBB6;
 
 }
+
+.about-style {
+    background-color: #00c07e;
+    text-align: left;
+}
+
+.img-left {
+    border-radius: 3%;
+    margin-left: 0%;
+}
+
+.padded-left {
+    padding: 100px 0;
+    text-align: left;
+}
