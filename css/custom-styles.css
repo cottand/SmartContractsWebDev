@@ -39,3 +39,10 @@ section {
     padding-left: 15px;
     text-align: left;
 }
+
+.app_top {
+    display: table-cell;
+}
+.app_top img {
+    float: left;
+}
