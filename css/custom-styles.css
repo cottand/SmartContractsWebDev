@@ -10,7 +10,7 @@ header {
 
 @media (min-width: 992px) {
     header {
-        padding: 80px 0 800px;
+        padding: 200px 0 200px;
     }
 }
 
@@ -27,12 +27,13 @@ section {
     background-color: #1CBBB6;
     background-image: url("../pics/cat.png");
     background-size: 100%;
+    width: 100%;
     margin-right:  10px;
 
 }
 
 .about-style {
-    background-color: #00c07e;
+    background-color: #70c77a;
     text-align: left;
 }
 
