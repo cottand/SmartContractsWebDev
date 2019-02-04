@@ -1,7 +1,6 @@
 /*!
- * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/template-overviews/scrolling-nav)
- * Copyright 2013-2017 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
+ *   Custom CSS styles
+ *     A few of this are edited version of styles from bootstrap.min.css
  */
 
 header {
@@ -23,6 +22,14 @@ section {
     padding: 80px 0 80px;
 }
 
+.bg-dark-semitransparent{
+    background-color: rgba(33, 33, 33, 0.8);
+}
+
+.navbar-dark .navbar-brand {
+    color: #fff
+}
+
 .cat-color-backg {
     background-color: #1CBBB6;
     background-image: url("../pics/cat.png");
@@ -33,7 +40,7 @@ section {
 }
 
 .about-style {
-    background-color: #70c77a;
+    background-color: #c78a40;
     text-align: left;
 }
 
