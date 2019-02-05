@@ -44,6 +44,21 @@ section {
     text-align: left;
 }
 
+.verification-style {
+    background-color: #1CBBB6;
+    text-align: left;
+}
+
+.otherProjects-style{
+    background-color: #6f42c1;
+    text-align: left;
+}
+
+.futureWork-style{
+    background-color: #c82333;
+    text-aling: left;
+}
+
 .img-left {
     border-radius: 3%;
     margin-left: 0%;
