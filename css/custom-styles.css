@@ -15,7 +15,7 @@ header {
 
 /* padding between sections */
 section {
-    padding: 70px 0;
+    padding: 50px 0;
 }
 
 .header2 {
@@ -32,19 +32,12 @@ section {
     font-family: 'Source Code Pro', monospace; !important;
     text-transform: uppercase;  !important;
     font-size: small;
+    background-color: rgba(0,0,0,0.71);
 }
 
 
 .bg-dark-semitransparent {
     background-color: rgba(33, 33, 33, 0.8);
-}
-
-.bg-black-semitransparent {
-    background-color: rgba(0,0,0,0.71);
-}
-
-.navbar-dark .navbar-brand {
-    color: #fff
 }
 
 .cat-color-backg {
@@ -96,6 +89,11 @@ section {
 
 .app_top img {
     float: left;
+}
+
+.bg-light {
+    background-color: #eeeff0 !important
+
 }
 
 
