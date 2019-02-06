@@ -70,8 +70,14 @@
         <div class="row">
             <div class="col-lg-8 mx-auto">
                 <h2>About smart contracts</h2>
-                <p class="lead">Smart contracts are at the core of Dominik's research. The two main challenges
-                he has to solve are:</p>
+                <p class="lead">Smart contracts are at the core of Dominik's research.
+                  Contracts are a requirement resulting from an inherent lack of trust between parties.
+                  Smart contracts execute agreements on a distributed ledger like Bitcoin or Ethereum.
+                  The ledger’s consensus protocol ensures correct execution of the smart contract, whereby a majority agrees on the accepted result.
+                  Consensus protocols enable mutually distrusting parties to create contracts and interact.
+                  Smart contracts need a low-level language that allows deterministic execution.
+                  A high-level language can make it easier for developers to create new contracts and reason about existing contracts.The two main challenges
+                  he has to solve are:</p>
                 <ul>
                     <li>Specification</li>
                     <li>Verification</li>
@@ -86,7 +92,37 @@
         <div class="row">
             <div class="col-lg-8 mx-auto">
                 <h2>Specification</h2>
-                <p class="lead">Bla bla bla specs.</p>
+                <p class="lead">Technical overview:
+                  In software development, having different sets of languages is a conventional process.
+                  Similarly, we can distinguish three different levels of languages for smart contracts.
+                  <li>High-level languages: </li>
+                  They should provide a way to express the desired contracts.
+                  Multiple high-level languages can exist in parallel to be executed on the same ledger.
+                  Examples for high-level languages are Solidity and Liquidity.
+                  <li>Intermediary representations: </li>
+                  IRs are between low-level and high-level languages.
+                  IRs can be used to write programs to reason about properties (like safety or liveness) or optimising code.
+                  Examples include Simplicity and Scilla.
+                  <li>Low-level languages: </li>
+                  These need to implement the contract in a deterministic way to be executed on a distributed virtual machine (VM).
+                  Examples include Bitcoin Script and EVM bytecode.
+                  <p class="lead">Security properties:
+                  Desired properties of smart contracts include safety and liveness.
+                  Safety refers to satisfying specific correctness properties during any state on a contract.
+                  Liveness describes that certain events may eventually occur.
+                  <li>Call integrity: </li>
+                  A contract can execute code of an external contract within its functions, call another contract’s function and wait for its returned value, or call another contract that changes the global state or re-enters the calling contract.
+                  In these cases, the contract’s control flow should not be influenced by an adversary contract.
+                  <li>Atomicity: </li>
+                  Functions should be executed entirely, or the state should be reverted, except when specifically allowed during exception handling.
+                  <li>Independence: </li>
+                  Transactions change the state of a contract.
+                  Miners and other parties can control or influence parameters in contracts or transactions.
+                  Also, the ordering of transactions can be influenced by miners or others paying higher fees.
+                  Hence, contracts should ideally be independent of the global state or parameters that can be influenced externally.
+                  <li>Runtime correctness: </li>
+                  Each contract serves a distinct purpose.
+                  Properties particular to the expected behaviour of a contract need to be defined to ensure the runtime correctness of the contract.</p>
             </div>
         </div>
     </div>
@@ -97,7 +133,30 @@
         <div class="row">
             <div class="col-lg-8 mx-auto">
                 <h2>Verification</h2>
-                <p class="lead">Good? all good! verified.</p>
+                <p class="lead">3.1 Language design (focusing on security features)
+                  <li>High level-used to promote safe smart contracts</li>
+                  <li>Intermediary Representations-used for formal verification and optimization</li>
+                  <li>Low level-allow formal verification + run-time optimized execution</li>
+                  <p class="lead">
+                  3.2 approach</p>
+                  In proof-based verification, the system is represented by a set of formulas, while in model-based verification the system is a model.
+                  Properties are represented as formulas.
+                  The goal is to either proof (proof-based) or to compute whether a model (model-based) satisfies these properties.
+                  Proof-based methods typically derive a formal definition of the distributed VM and then try to verify properties of a smart contract.
+                  Model-based methods build a model directly from the smart contract and verify the properties with an implicit model of the VM.</p>
+                  <p class="lead">
+                  3.3 automation</p>
+                  Fully automated approaches have a set of properties and automatically build a model for the system based on an input (like the source code).
+                  Partial automation typically requires defining properties or using a proof-assistant to define and check proofs</p>
+                  <p class="lead">
+                  3.4 coverage</p>
+                  Property-based verification is concerned with selected parts of the system, while full covers the system as a whole.</p>
+                  <p class="lead">
+                  3.5 Formal semantics and verified compilers</p>
+                  A main focus is developing IRs with formal semantics and creating formal semantics for existing low-level languages.
+                  We argue that in the future, more projects need to adopt formal semantics on all language levels to promote verification efforts and prevent ambiguities in compiler implementations.
+                  Further, this allows to create verified compilers making it easier to argue about contracts in a high-level language [27].
+                  Next, current formal semantics for the EVM combine the VM and the ledger in a single definition</p>
             </div>
         </div>
     </div>
