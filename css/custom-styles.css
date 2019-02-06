@@ -15,19 +15,29 @@ header {
 
 /* padding between sections */
 section {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .header2 {
     padding: 80px 0 80px;
 }
 
-.bg-dark-semitransparent {
-    background-color: rgba(33, 33, 33, 0.8);
+.styledFont {
+    font-family: 'Source Code Pro', monospace; !important;
+    text-transform: uppercase;  !important;
+    font-size: small;
 }
 
-.navbar-dark .navbar-brand {
-    color: #fff
+.navbar-dark{
+    font-family: 'Source Code Pro', monospace; !important;
+    text-transform: uppercase;  !important;
+    font-size: small;
+    background-color: rgba(0,0,0,0.71);
+}
+
+
+.bg-dark-semitransparent {
+    background-color: rgba(33, 33, 33, 0.8);
 }
 
 .cat-color-backg {
@@ -41,12 +51,14 @@ section {
 
 .otherProjects-style-header{
 
-    background-color: #1CBBB6;
-    background-image: url("../pics/cpWP2.jpg");
+    background-color: #353dbb;
+    background-image: url("../pics/cpWP4.jpg");
     background-size: 100%;
     width: 100%;
     margin-right: 10px;
-    margin-top: -300px;
+    image-rendering: smooth;
+    background-position: bottom;
+
 }
 
 .about-style {
@@ -77,4 +89,30 @@ section {
 
 .app_top img {
     float: left;
+}
+
+.bg-light {
+    background-color: #eeeff0 !important
+
+}
+
+
+.about-style {
+    background-color: #c78a40;
+    text-align: left;
+}
+
+.verification-style {
+    background-color: #1CBBB6;
+    text-align: left;
+}
+
+.otherProjects-style{
+    background-color: #6f42c1;
+    text-align: left;
+}
+
+.futureWork-style{
+    background-color: #c82333;
+    text-aling: left;
 }
