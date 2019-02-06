@@ -104,7 +104,12 @@ section {
 
 .verification-style {
     background-color: #1CBBB6;
-    text-align: left;
+    background-image: url("../pics/cpWP2.jpg");
+    background-size: 100%;
+    width: 100%;
+    margin-right: 10px;
+    image-rendering: smooth;
+    background-position: center;
 }
 
 .otherProjects-style{
