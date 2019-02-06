@@ -12,7 +12,7 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="css/custom2-styles.css" rel="stylesheet">
+    <link href="css/custom-styles.css" rel="stylesheet">
 
 </head>
 
@@ -54,26 +54,38 @@
     </div>
 </nav>
 
-<header class="otherProjects-style text-white header2">   <!--was bg-primary-->
-    <div class="container">
-        <div class="row">
-            <div class="container col-lg-8 mx-auto padded-left">
-                <h1 style="text-align: left; margin-left: 10px" class="padded-abit">Other Projects</h1>
+<header class="otherProjects-style-header">   <!--was bg-primary-->
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="container col-lg-8 mx-auto padded-left">
+                    <h1 style="text-align: left" class="padded-abit">Other and past projects</h1>
+
+                </div>
             </div>
         </div>
     </div>
 </header>
-
+<!--TODO: remove-->
+I really think dumping a styled copy pasta of the blog here is terrible,
+but there's little other content we can add to this page
 <section id="field1">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto">
-                <h2>Other Projects</h2>
-                <p class="lead">Some of the other projects</p>
-                <ul>
-                    <li>Project 1</li>
-                    <li>Project 2</li>
-                </ul>
+                <h2>XCLAIM</h2>
+                <p class="lead">XCLAIM is a protocol that enables cross-chain interoperability
+                    of cryptocurrencies. The idea is to issue tokens from one blockchain on
+                    another chain without any trusted intermediaries. Instead, the intermediaries
+                    are incentivized to behave honestly through collateral. Proofs of honest and
+                    malicious behaviour is achieved through transaction inclusion proofs. This is
+                    the first trustless cross-chain interoperability protocol with such strong
+                    guarantees and without the need to either trust a third-party or bootstrap a
+                    permissioned blockchain as intermediary.</p>
+                <p href="https://www.xclaim.io/"
+                   class="navbar-toggler">Project Website ➜</p>
+                <p href="https://github.com/crossclaim/"
+                   class="navbar-toggler">Project git ➜</p>
             </div>
         </div>
     </div>
@@ -83,8 +95,22 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto">
-                <h2>Project 1</h2>
-                <p class="lead">Dummy text.</p>
+                <h2>A specification language for smart contract verification</h2>
+                <p class="lead">Smart contracts are still prone to security vulnerabilities. Apart
+                    from using automated tools to verify for known bugs, it can be beneficial to
+                    verify that a smart contract is correct with respect to some specification.
+                    However, using formal verification tools is mostly combined with a steep
+                    learning curve and requires a deep understanding of the tools. This projects
+                    aims to develop a domain-specific language for writing specifications to
+                    verify smart contracts. The idea is to abstract away some of the complexities
+                    so that formal verification can become a standard tool for smart contract
+                    developers.
+
+                </p>
+
+                <p href="https://github.com/nud3l/smart-contract-specification"
+                   class="navbar-toggler">Project git ➜</p>
+
             </div>
         </div>
     </div>
@@ -94,7 +120,64 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto">
-                <h2>Project 2</h2>
+                <h2>Privacy-preserving machine learning</h2>
+                <p class="lead">I had the pleasure to supervise Florian Apfelbeck's
+                    master thesis project to develop a privacy-preserving machine
+                    learning project. In this project, a Multi-Party Computation (MPC)
+                    protocol was used to realise a linear regression and a shallow neural
+                    network implementation without reveling input data of the
+                    participants in the protocol.</p>
+                <p href="https://www.linkedin.com/in/florian-apfelbeck-00139674/"
+                   class="navbar-toggler">Florian Apfelbeck on LinkedIn ➜</p>
+                <p href="https://medium.com/@apfelbeck.florian/secure-multiparty-computation-enabling-privacy-preserving-machine-learning-ffef396b8ca2"
+                   class="navbar-toggler">Medium article ➜</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="field4" class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2>dInvest: a social hedge fund in Ethereum</h2>
+                <p class="lead">Selecting a suitable financial investment, ethical
+                    and social criteria are becoming critical success factors. The
+                    core issue is finding a suitable framework for sustainable and
+                    profitable investment in combination with full transparency over
+                    the decision process and transactions. We are working on a
+                    proof-of-concept to realize profitable, transparent and socially
+                    responsible investment.</p>
+                <p href="https://dominikharz.me/blockchain/2017/01/10/dinvest.html"
+                   class="navbar-toggler">Blog post ➜</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="field5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2>Breaking CAPTCHAs using deep learning</h2>
+                <p class="lead">The aim of the project is to break CAPTCHAs using
+                    deep learning technologies. Initially the focus lies on simple
+                    CAPTCHAs to evaluate the performance and move into more complex
+                    CAPTCHAs. The training dataset is generated from an open source
+                    CAPTCHA generation software. Tensorflow is used to create, train
+                    and test the network.
+                </p>
+
+                <p href="https://dominikharz.me/ai/2017/01/12/breakingcaptcha.html"
+                   class="navbar-toggler">Blog post ➜</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section id="field100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2>Privacy-preserving machine learning</h2>
                 <p class="lead">Dummy Text.</p>
             </div>
         </div>
