@@ -67,6 +67,22 @@ section {
 
 }
 
+.verification-style-text-white-header2{
+
+    background-color: #353dbb;
+    background-image: url("../pics/contracts.jpeg");
+    background-size: 50%;
+    width: 100%;
+    margin-right: 20px;
+    image-rendering: smooth;
+    position: relative;
+
+}
+
+.color{
+  color: gray;
+}
+
 .about-style {
     background-color: #c78a40;
     text-align: left;
