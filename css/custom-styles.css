@@ -112,6 +112,12 @@ section {
     background-position: center;
 }
 
+.diagram{
+    max-width: 100%;
+    height: auto;
+
+}
+
 .otherProjects-style{
     background-color: #6f42c1;
     text-align: left;

@@ -153,6 +153,7 @@
         <div class="row">
             <div class="col-lg-8 mx-auto">
                 <h2>Specification</h2>
+                <img class="diagram" src="pics/specification.JPG">
                 <p class="lead">There are many ways to specify a smart contract, the design of the specific language
                     chosen determines a lot of the security properties of the contract itself. These design aspects and
                     their properties are explored in the following subsections and a general overview of commonly used
@@ -336,37 +337,62 @@
     <div class="container">
         <div class="col-lg-8 mx-auto">
             <h2>Verification</h2>
-            <p class="lead">TO COMPLETE</p>
+            <img class="diagram" src="pics/verification.JPG">
+            <p class="lead">There are three main approaches to smart contract verification. Approach (A) bases its
+                analysis on the low-level code which is distributed on the ledger. Approach (B) decompiles the low-level
+                code into an intermediary representation in order to reason about the properties of the contract.
+                Finally, (C) reasons directly on the high-level code.</p>
             <h4>Approach</h4>
+            <p class="lead">Any approach can be categorized in one of two classes:</p>
             <b>Proof-based verification</b>
             <p>
-
+                In proof-based verification the system is represented by a set of formulas. These methods typically
+                derive a formal definition of the specific distributed VM and then try to verify the properties of the
+                contract.
             </p>
             <b>Model-based verification</b>
             <p>
-
+                In this approach, the system being verified is a model. This approach builds a model directly from the
+                smart contract and then tries to verify the expected properties, by using an implicit model of the given
+                VM.
             </p>
             <h4>Automation</h4>
+            <p class="lead">Can be either:</p>
             <b>Full automation</b>
             <p>
-
+                This has a significant advantage as it uses many pre-defined properties which can be easily verified on
+                other contracts. <b>Model-based</b> tools are fully automated, they mostly use an SMT solver to explore
+                the
+                potential fulfilment and violation of properties.
             </p>
             <b>Partial automation</b>
             <p>
-
+                Partial automation can be used by defining properties that a specific contract should fulfill. However
+                it is beneficial to first define the functionality of a contract and then verify it rather than finding
+                selected vulnerabilities. <b>Proof-based methods</b> are partially automated.
             </p>
             <h4>Coverage</h4>
             <b>Partial, property-based verification</b>
             <p>
-
+                Most <b>mode-based methods</b> verify only if selected properties are violated. The properties to be
+                checked are based on set of known vulnerabilities, and contracts are flagged vulnerable if they conform
+                to specific prior established patterns. These detections are made using static analysis.
             </p>
             <b>Full verification</b>
             <p>
-
+                <b>Proof-based methods</b> aim to fully verify a contract, based on formally defined security semantics.
+                However no security semantics are completed, as contract-specific properties are needed to ensure the
+                correctness of a contract.
             </p>
             <h4>Languages</h4>
             <p>
-
+                Majority of tools use <i>EVM bytecode</i> to derive a model of a contract. Moreover most models do not
+                implement all of the opcodes, and so vulnerabilities can remain, hence not all contracts can be fully
+                verified. There have been major work efforts to build a formal semantics of the EVM, none of which are
+                fully complete. Some methods use <i>intermediary representations</i>, these should make future formal
+                verification easier, as they are being designed with formal verification in mind. This approach further
+                aids the development of verified compilers. <b>High-level language</b> are an exception as they build
+                their model based on languages such as <i>Solidity</i> or <i>Java</i>.
             </p>
         </div>
     </div>
@@ -377,7 +403,51 @@
         <div class="row">
             <div class="col-lg-8 mx-auto">
                 <h2>Conclusion</h2>
-
+                <p class="lead">To conclude the 4 main aspects which need to be taken into consideration to enable for
+                    safer smart contracts are:</p>
+                <h4>Language design</h4>
+                <p>
+                    <b>High-level languages</b> used for smart contracts can be designed in such a way that they promote
+                    safety in
+                    contracts by:
+                <ul>
+                    <li>Making state changes explicit through using an FSM/automata approach</li>
+                    <li>Restricting the instruction set by only allowing finite loops</li>
+                    <li>Preventing function overloading</li>
+                    <li>Creating explicit types</li>
+                    <li>Promoting pure functions</li>
+                </ul>
+                As an attempt to bring best practices from software engineering and language theory to distributed
+                ledgers, <b>intermediary languages</b> are created with formal verification and optimisation in mind.
+                <b>Low-level languages</b> allow formal verification and give a run-time optimised execution on the
+                distributed ledger. Bringing all these practices together help create safer smart contracts.
+                </p>
+                <h4>Verification</h4>
+                <p>
+                    Contract verification efforts include:
+                <ul>
+                    <li>Categorising and defining security properties</li>
+                    <li>Developing mode-based tools to prevent known bugs</li>
+                    <li>Formal semantics to ensure compliance</li>
+                </ul>
+                <b>Proof-based verification</b> is more challenging than just checking for known vulnerabilities, thus
+                it is only worthwhile for high-value contracts.
+                </p>
+                <h4>Formal semantics and verified compilers</h4>
+                <p>
+                    In the future it would be beneficial to adopt formal semantics in all language levels. Currently the
+                    focus is developing IR's with formal semantics and and creating such semantics for already existing
+                    low-level languages. This would simplify verification efforts and prevent ambiguities in code.
+                    Moreover, the creation of verified compilers would be possible, which would make arguing about
+                    contracts in high-level languages less challenging.
+                </p>
+                <h4>Complete security definitions</h4>
+                <p>
+                    General security definitions for various execution environments are required. Furthermore the
+                    separation of the execution environment from the ledger, would open up the possibility of verifying
+                    implementations against a formal specification. This could potentially pave the road for automated
+                    formal verification.
+                </p>
             </div>
         </div>
     </div>
