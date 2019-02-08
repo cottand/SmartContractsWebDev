@@ -46,9 +46,14 @@ section {
     border-radius: 4px;
 }
 
-.cat-color-backg {
+.mid-image {
+border-radius: 5px;
+width: 100% !important;
+
+}
+.index-header {
     background-color: #1CBBB6;
-    background-image: url("../pics/contract.png");
+    background-image: url("../pics/neon6.jpg");
     background-size: 100%;
     width: 100%;
     margin-right: 10px;
@@ -148,5 +153,5 @@ section {
 
 .futureWork-style{
     background-color: #c82333;
-    text-aling: left;
+    text-align: left;
 }
