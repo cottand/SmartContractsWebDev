@@ -5,6 +5,7 @@
 
 header {
     padding: 154px 0 100px;
+    font-family: 'Source Code Pro', monospace !important;
 }
 
 @media (min-width: 992px) {
@@ -15,19 +16,34 @@ header {
 
 /* padding between sections */
 section {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .header2 {
     padding: 80px 0 80px;
 }
 
-.bg-dark-semitransparent{
-    background-color: rgba(33, 33, 33, 0.8);
+.styledFont {
+    font-family: 'Source Code Pro', monospace !important;
 }
 
-.navbar-dark .navbar-brand {
-    color: #fff
+.navbar-dark{
+    font-family: 'Source Code Pro', monospace !important;
+    text-transform: uppercase;
+    font-size: small;
+    background-color: rgba(0,0,0,0.71);
+}
+
+
+.bg-dark-semitransparent {
+    background-color: rgba(0, 0, 0, 0.71)  !important;
+}
+.bg-dark-semitransparent-padded {
+    background-color: rgba(0, 0, 0, 0.71)  !important;
+    padding: 10px;
+    padding-left: 10px !important;
+    padding-right: 10px;
+    border-radius: 4px;
 }
 
 .cat-color-backg {
@@ -35,8 +51,37 @@ section {
     background-image: url("../pics/contract.png");
     background-size: 100%;
     width: 100%;
-    margin-right:  10px;
+    margin-right: 10px;
 
+}
+
+.otherProjects-style-header{
+
+    background-color: #353dbb;
+    background-image: url("../pics/neon3-cropped.jpg");
+    background-size: 100%;
+    width: 100%;
+    margin-right: 10px;
+    image-rendering: smooth;
+    background-position: top;
+
+}
+
+.verification-style-text-white-header2{
+
+    background-color: #353dbb;
+    background-image: url("../pics/contracts.jpeg");
+    background-size: 50%;
+    width: 100%;
+    margin-right: 20px;
+    image-rendering: smooth;
+    position: relative;
+
+}
+
+.color{
+  color: gray;  /*Why gray?? */
+  color: white;
 }
 
 .about-style {
@@ -57,13 +102,51 @@ section {
     margin-left: 10px;
 }
 
-.padded-abit{
+.padded-abit {
     padding-left: 0%
 }
 
 .app_top {
     display: table-cell;
 }
+
 .app_top img {
     float: left;
+}
+
+.bg-light {
+    background-color: #eeeff0 !important
+
+}
+
+
+.about-style {
+    background-color: #c78a40;
+    text-align: left;
+}
+
+.verification-style {
+    background-color: #1CBBB6;
+    background-image: url("../pics/cybWP1.png");
+    background-size: 100%;
+    width: 100%;
+    margin-right: 10px;
+    image-rendering: smooth;
+    background-position: center;
+}
+
+.diagram{
+    max-width: 100%;
+    height: auto;
+
+}
+
+.otherProjects-style{
+    background-color: #6f42c1;
+    text-align: left;
+}
+
+.futureWork-style{
+    background-color: #c82333;
+    text-aling: left;
 }
