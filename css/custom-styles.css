@@ -38,6 +38,9 @@ section {
 .bg-dark-semitransparent {
     background-color: rgba(0, 0, 0, 0.71)  !important;
 }
+
+
+
 .bg-dark-semitransparent-padded {
     background-color: rgba(0, 0, 0, 0.71)  !important;
     padding: 10px;
