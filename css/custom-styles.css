@@ -80,7 +80,8 @@ section {
 }
 
 .color{
-  color: gray;
+  color: gray;  /*Why gray?? */
+  color: white;
 }
 
 .about-style {
