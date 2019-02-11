@@ -143,6 +143,12 @@ width: 100% !important;
     background-position: center;
 }
 
+.btn-link{
+    font-family: 'Source Code Pro', monospace !important;
+    font-size: medium;
+    color: black;
+}
+
 .diagram{
     max-width: 100%;
     height: auto;
