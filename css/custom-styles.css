@@ -97,8 +97,13 @@ width: 100% !important;
 }
 
 .about-style {
-    background-color: #c78a40;
-    text-align: left;
+  background-color: #353dbb;
+  background-image: url("../pics/cpWP2.jpg");
+  background-size: 50%;
+  width: 100%;
+  margin-right: 20px;
+  image-rendering: smooth;
+  background-position: top;
 }
 
 .img-left {
