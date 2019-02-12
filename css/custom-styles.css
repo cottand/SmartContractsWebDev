@@ -116,12 +116,14 @@ width: 100% !important;
 
 .about-style {
   background-color: #353dbb;
-  background-image: url("../pics/cpWP2.jpg");
-  background-size: 50%;
+  background-image: url("../pics/neon1.jpg");
+  background-size: 100%;
   width: 100%;
   margin-right: 20px;
   image-rendering: smooth;
-  background-position: top;
+  background-position: center;
+  text-align: left;
+  padding: 160px 0;
 }
 
 .img-left {
@@ -152,12 +154,6 @@ width: 100% !important;
 .bg-light {
     background-color: #eeeff0 !important
 
-}
-
-
-.about-style {
-    background-color: #c78a40;
-    text-align: left;
 }
 
 .verification-style {
