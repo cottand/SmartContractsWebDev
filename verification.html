@@ -18,30 +18,45 @@
 
 <body id="page-top">
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark-semitransparent fixed-top" id="mainNav">
-    <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="index.html">Home</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-semitransparent fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                Sections
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <button class="dropdown-item" type="button"><a class="nav-link js-scroll-trigger" href="#field2">Overview</a>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Sections
                 </button>
-                <button class="dropdown-item" type="button"><a class="nav-link js-scroll-trigger" href="#field3">Specification</a>
-                </button>
-                <button class="dropdown-item" type="button"><a class="nav-link js-scroll-trigger" href="#field4">Verification</a>
-                </button>
-                <button class="dropdown-item" type="button"><a class="nav-link js-scroll-trigger" href="#field5">Conclusion</a>
-                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item" type="button"><a class="nav-link js-scroll-trigger" href="#field2">Overview</a>
+                    </button>
+                    <button class="dropdown-item" type="button"><a class="nav-link js-scroll-trigger" href="#field3">Specification</a>
+                    </button>
+                    <button class="dropdown-item" type="button"><a class="nav-link js-scroll-trigger" href="#field4">Verification</a>
+                    </button>
+                    <button class="dropdown-item" type="button"><a class="nav-link js-scroll-trigger" href="#field5">Conclusion</a>
+                    </button>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav-pills js-scroll-trigger text-white" href="#page-top">Safer Contracts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-pills" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-pills" href="aboutDominik.html">About Dominik</a>
+                    </li>
+                </ul>
             </div>
         </div>
+
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -51,7 +66,7 @@
                     <a class="nav-link nav-pills" href="projects.html">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-pills" href="aboutDominik.html">About Dominik</a>
+                    <a class="nav-link nav-pills" href="about.html">About</a>
                 </li>
             </ul>
         </div>
@@ -59,533 +74,585 @@
 </nav>
 
 
-<header class="verification-style">
-    <!--was bg-primary-->
-    <div class="container">
-        <div class="row">
-            <div class="container col-lg-8 mx-auto padded-left">
-                <!-- There was grey color here -->
-                <h1 style="text-align: left; float: left"
-                    class="padded-abit bg-dark-semitransparent-padded styledFont text-white">
-                    Smart contracts for autonomous agents</h1>
+
+    <header class="verification-style">
+        <!--was bg-primary-->
+        <div class="container">
+            <div class="row">
+                <div class="container col-lg-8 mx-auto padded-left">
+                    <!-- There was grey color here -->
+                    <h1 style="text-align: left; float: left" class="padded-abit bg-dark-semitransparent-padded styledFont text-white">
+                        Smart contracts for autonomous agents</h1>
+                </div>
             </div>
         </div>
-    </div>
-</header>
+    </header>
 
-<section id="field1">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <p class="lead">Dominik aims to make smart contracts safer. This page is based on his research paper:
-                    "Towards Safer Smart Contracts: A Survey of Languages and Verification Methods"
-                    <a id="reference" href="https://arxiv.org/abs/1809.09805"><b>arXiv:1809.09805 [cs.CR]</b></a>
-                </p>
+    <section id="field1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <p class="lead">Dominik aims to make smart contracts safer. This page is based on his research
+                        paper:
+                        "Towards Safer Smart Contracts: A Survey of Languages and Verification Methods"
+                        <a id="reference" href="https://arxiv.org/abs/1809.09805"><b>arXiv:1809.09805 [cs.CR]</b></a>
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="field2" class="bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <h4>Technical overview</h4>
-                <p class="lead">Smart contracts are made up of 4 main technical elements:</p>
-                <p>
-                    <b>High-level languages</b> such as <i>Solidity</i> provide a way for developers to express desired
-                    contracts, there is no limitation on how many of these can exist in parallel on the same ledger.
-                </p>
-                <p>
-                    <b>Intermediary representations (IR)</b> these can be used to reason about properties or to optimise
-                    code an example is <i>Scilla</i>.
-                </p>
-                <p>
-                    <b>Low-level languages</b> need to implement the contract in a deterministic fashion for it to be
-                    executed on a distributed virtual machine, Ethereum uses <i>EVM bytecode</i>.
-                </p>
-                <p>
-                    The <b>Distributed ledger</b> plays a vital role in how the language is designed. The ledger can be
-                    separated into transaction and scripts, consensus protocol and network protocol.
-                </p>
-                <h4>Required security properties</h4>
-                <p class="lead">The two main desired properties of smart contracts are safety and liveness. Safety
-                    referring to satisfying the correct properties during any state. Liveness describes anticipating the
-                    occurrence of certain events. A formal definition of general security properties of a smart
-                    contract includes the following:
-                </p>
-                <p>
-                    <b>Call integrity:</b> A contract's control flow should not be influenced by an opposing contract.
-                    This could happen, since a specific contracts state may depend on an external call, which could
-                    potentially change the global state or re-enter the contract causing a recursive loop.
-                </p>
-                <p>
-                    <b>Atomicity:</b> Functions of a contract should either be fully executed, or the state should be
-                    reverted. However, it should be noted that a contract could executed an external call successfully
-                    and not terminate due to an issue, such a contract would be drained when sending currency.
-                </p>
-                <p>
-                    <b>Independence:</b> Contracts should be independent of the global state and parameters, which can
-                    be influenced externally. This is because miners and other parties paying higher fees can
-                    potentially control some parameters.
-                </p>
-                <p>
-                    <b>Runtime correctness</b> is also essential and can be ensured by defining the expected behaviour
-                    of each contract, as each one serves a distinct purpose.
-                </p>
+    <section id="field2" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h4>Technical overview</h4>
+                    <p class="lead">Smart contracts are made up of 4 main technical elements:</p>
+                    <p>
+                        <b>High-level languages</b> such as <i>Solidity</i> provide a way for developers to express
+                        desired
+                        contracts, there is no limitation on how many of these can exist in parallel on the same
+                        ledger.
+                    </p>
+                    <p>
+                        <b>Intermediary representations (IR)</b> these can be used to reason about properties or to
+                        optimise
+                        code an example is <i>Scilla</i>.
+                    </p>
+                    <p>
+                        <b>Low-level languages</b> need to implement the contract in a deterministic fashion for it to
+                        be
+                        executed on a distributed virtual machine, Ethereum uses <i>EVM bytecode</i>.
+                    </p>
+                    <p>
+                        The <b>Distributed ledger</b> plays a vital role in how the language is designed. The ledger
+                        can be
+                        separated into transaction and scripts, consensus protocol and network protocol.
+                    </p>
+                    <h4>Required security properties</h4>
+                    <p class="lead">The two main desired properties of smart contracts are safety and liveness. Safety
+                        referring to satisfying the correct properties during any state. Liveness describes
+                        anticipating the
+                        occurrence of certain events. A formal definition of general security properties of a smart
+                        contract includes the following:
+                    </p>
+                    <p>
+                        <b>Call integrity:</b> A contract's control flow should not be influenced by an opposing
+                        contract.
+                        This could happen, since a specific contracts state may depend on an external call, which could
+                        potentially change the global state or re-enter the contract causing a recursive loop.
+                    </p>
+                    <p>
+                        <b>Atomicity:</b> Functions of a contract should either be fully executed, or the state should
+                        be
+                        reverted. However, it should be noted that a contract could executed an external call
+                        successfully
+                        and not terminate due to an issue, such a contract would be drained when sending currency.
+                    </p>
+                    <p>
+                        <b>Independence:</b> Contracts should be independent of the global state and parameters, which
+                        can
+                        be influenced externally. This is because miners and other parties paying higher fees can
+                        potentially control some parameters.
+                    </p>
+                    <p>
+                        <b>Runtime correctness</b> is also essential and can be ensured by defining the expected
+                        behaviour
+                        of each contract, as each one serves a distinct purpose.
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="field3">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <h2>Specification</h2>
-                <img class="diagram" src="pics/specification.JPG">
-                <p class="lead">There are many ways to specify a smart contract, the design of the specific language
-                    chosen determines a lot of the security properties of the contract itself. These design aspects and
-                    their properties are explored in the following subsections.
-                </p>
-                <div id="accordion">
-                    <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse"
-                                        data-target="#collapseOne" aria-expanded="false"
-                                        aria-controls="collapseOne">
-                                    <b>Type</b>
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-                             data-parent="#accordion">
-                            <div class="card-body">
-                                <b>High-level</b>
-                                <p>The most widely used smart contract language is <i>Solidity</i>, this was created
-                                    specifically for Ethereum. Other examples of high-level languages used for smart
-                                    contracts include: <i>Bamboo, Vyper, Flint, Pyramid Scheme, Obsidian, Rholang,
-                                        Liquidity, DAML, Pact</i>.
-                                </p>
-                                <b>Intermediary</b>
-                                <p>
-                                    Examples of intermediary representations include: <i>Simplicity, Scilla, Yul,
-                                    Solidity, EthIR, IELE</i>.
-                                </p>
-                                <b>Low-level</b>
-                                <p>
-                                    Smart contracts are essentially stored on a distributed ledger in the form of a
-                                    low-level language, which is to be executed by the VM, examples of such languages:
-                                    <i>Bitcoin script, EVM, eWASM, Michelson</i>.
-                                </p>
-                                <b>General purpose languages</b>
-                                <p>
-                                    <i>Hyperledger Fabric</i> or <i>Neo</i> use general purpose programming languages.
-                                    The advantage to this is that they are already know to developers and previous
-                                    verification tools can be used. However, the global state needs to imported through
-                                    special functions, furthermore these languages often allow infinite and recursive
-                                    loops.
-                                </p>
+    <section id="field3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Specification</h2>
+                    <img class="diagram" src="pics/specification.JPG">
+                    <p class="lead">There are many ways to specify a smart contract, the design of the specific
+                        language
+                        chosen determines a lot of the security properties of the contract itself. These design aspects
+                        and
+                        their properties are explored in the following subsections.
+                    </p>
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne"
+                                        aria-expanded="false" aria-controls="collapseOne">
+                                        <b>Type</b>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    <b>High-level</b>
+                                    <p>The most widely used smart contract language is <i>Solidity</i>, this was
+                                        created
+                                        specifically for Ethereum. Other examples of high-level languages used for
+                                        smart
+                                        contracts include: <i>Bamboo, Vyper, Flint, Pyramid Scheme, Obsidian, Rholang,
+                                            Liquidity, DAML, Pact</i>.
+                                    </p>
+                                    <b>Intermediary</b>
+                                    <p>
+                                        Examples of intermediary representations include: <i>Simplicity, Scilla, Yul,
+                                            Solidity, EthIR, IELE</i>.
+                                    </p>
+                                    <b>Low-level</b>
+                                    <p>
+                                        Smart contracts are essentially stored on a distributed ledger in the form of a
+                                        low-level language, which is to be executed by the VM, examples of such
+                                        languages:
+                                        <i>Bitcoin script, EVM, eWASM, Michelson</i>.
+                                    </p>
+                                    <b>General purpose languages</b>
+                                    <p>
+                                        <i>Hyperledger Fabric</i> or <i>Neo</i> use general purpose programming
+                                        languages.
+                                        The advantage to this is that they are already know to developers and previous
+                                        verification tools can be used. However, the global state needs to imported
+                                        through
+                                        special functions, furthermore these languages often allow infinite and
+                                        recursive
+                                        loops.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingTwo">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
                                         aria-expanded="false" aria-controls="collapseTwo">
-                                    <b>Paradigm</b>
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                            <div class="card-body">
-                                <b>Explicit state transitions</b>
-                                <p>
-                                    Representing contracts as finite state machines (or automata) prevents re-entrancy
-                                    and allows explicit state transition functions. Thus, a transaction which has the
-                                    intention to change the state is either successful or raises an exception.
-                                    Furthermore, using this principle prevents any calls to external contracts within a
-                                    transition function, so that states do not change unpredictably.
-                                </p>
-                                <b>Functional programming</b>
-                                <p>
-                                    Functions in these languages can be designed in a way such that they either execute
-                                    entirely or revert. Other than pure functions, (which can be used to check that the
-                                    local/global state isn't affected) no other state-changing functions can be called.
-                                </p>
-                                <b>Logic programming</b>
-                                <p>
-                                    These languages closely resemble natural language contracts and can be purposely
-                                    non-deterministic as they may transfer the burden of determinism to the low-level
-                                    languages used (or the compiler).
-                                </p>
-                                <b>Stack-based</b>
-                                <p>
-                                    All low-level languages are stack-based. Their implementation makes inspection of
-                                    contracts challenging, although automated tools can be used to help verification
-                                    efforts, or de-compilers can be used to convert the stacks into higher-level
-                                    languages.
-                                </p>
+                                        <b>Paradigm</b>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div class="card-body">
+                                    <b>Explicit state transitions</b>
+                                    <p>
+                                        Representing contracts as finite state machines (or automata) prevents
+                                        re-entrancy
+                                        and allows explicit state transition functions. Thus, a transaction which has
+                                        the
+                                        intention to change the state is either successful or raises an exception.
+                                        Furthermore, using this principle prevents any calls to external contracts
+                                        within a
+                                        transition function, so that states do not change unpredictably.
+                                    </p>
+                                    <b>Functional programming</b>
+                                    <p>
+                                        Functions in these languages can be designed in a way such that they either
+                                        execute
+                                        entirely or revert. Other than pure functions, (which can be used to check that
+                                        the
+                                        local/global state isn't affected) no other state-changing functions can be
+                                        called.
+                                    </p>
+                                    <b>Logic programming</b>
+                                    <p>
+                                        These languages closely resemble natural language contracts and can be
+                                        purposely
+                                        non-deterministic as they may transfer the burden of determinism to the
+                                        low-level
+                                        languages used (or the compiler).
+                                    </p>
+                                    <b>Stack-based</b>
+                                    <p>
+                                        All low-level languages are stack-based. Their implementation makes inspection
+                                        of
+                                        contracts challenging, although automated tools can be used to help
+                                        verification
+                                        efforts, or de-compilers can be used to convert the stacks into higher-level
+                                        languages.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse"
-                                        data-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
-                                    <b>Instructions</b>
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                             data-parent="#accordion">
-                            <div class="card-body">
-                                <b>Restricted instructions</b>
-                                <p>
-                                    The idea behind restricting instructions is to prevent unwanted behaviour, by only
-                                    allowing necessary operations. Mostly infinite loops and recursion are restricted.
-                                </p>
-                                <b>Tail-calls</b>
-                                <p>
-                                    A critical aspect of instructions is the ability to call other contracts, as this
-                                    can potentially lead to unpredictable state changes. State changes can be made
-                                    explicit using tail-calls, which prevents adversaries to gain access to the control
-                                    flow of the contract.
-                                </p>
-                                <b>External function execution</b>
-                                <p>
-                                    External functions should be restricted, as they can grant storage access from the
-                                    calling contract to the called.
-                                </p>
-                                <b>Restrict overriding</b>
-                                <p>
-                                    Overriding can lead to issues with review, as it may not be trivial which code is
-                                    being executed.
-                                </p>
-                                <b>Overflow</b>
-                                <p>
-                                    Is to be prevented, this can be done using fixed-length integers or
-                                    arbitrary-precision signed integers.
-                                </p>
-                                <b>Code re-use</b>
-                                <p>
-                                    Some languages re-use EVM code to optimise the space used by the code.
-                                </p>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                                        aria-expanded="false" aria-controls="collapseThree">
+                                        <b>Instructions</b>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div class="card-body">
+                                    <b>Restricted instructions</b>
+                                    <p>
+                                        The idea behind restricting instructions is to prevent unwanted behaviour, by
+                                        only
+                                        allowing necessary operations. Mostly infinite loops and recursion are
+                                        restricted.
+                                    </p>
+                                    <b>Tail-calls</b>
+                                    <p>
+                                        A critical aspect of instructions is the ability to call other contracts, as
+                                        this
+                                        can potentially lead to unpredictable state changes. State changes can be made
+                                        explicit using tail-calls, which prevents adversaries to gain access to the
+                                        control
+                                        flow of the contract.
+                                    </p>
+                                    <b>External function execution</b>
+                                    <p>
+                                        External functions should be restricted, as they can grant storage access from
+                                        the
+                                        calling contract to the called.
+                                    </p>
+                                    <b>Restrict overriding</b>
+                                    <p>
+                                        Overriding can lead to issues with review, as it may not be trivial which code
+                                        is
+                                        being executed.
+                                    </p>
+                                    <b>Overflow</b>
+                                    <p>
+                                        Is to be prevented, this can be done using fixed-length integers or
+                                        arbitrary-precision signed integers.
+                                    </p>
+                                    <b>Code re-use</b>
+                                    <p>
+                                        Some languages re-use EVM code to optimise the space used by the code.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingFour">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse"
-                                        data-target="#collapseFour" aria-expanded="false"
-                                        aria-controls="collapseFour">
-                                    <b>Semantics</b>
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
-                             data-parent="#accordion">
-                            <div class="card-body">
-                                <b>Formal semantics</b>
-                                <p>
-                                    Creating formal semantics for a language can enable the creation of verified
-                                    compilers, which would make verification notably less challenging.
-                                </p>
-                                <b>Explicit types</b>
-                                <p>
-                                    The use of additional types can provide extra safety, for example enforcing updating
-                                    the balance before a function is called sending an asset.
-                                </p>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                                        aria-expanded="false" aria-controls="collapseFour">
+                                        <b>Semantics</b>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                                <div class="card-body">
+                                    <b>Formal semantics</b>
+                                    <p>
+                                        Creating formal semantics for a language can enable the creation of verified
+                                        compilers, which would make verification notably less challenging.
+                                    </p>
+                                    <b>Explicit types</b>
+                                    <p>
+                                        The use of additional types can provide extra safety, for example enforcing
+                                        updating
+                                        the balance before a function is called sending an asset.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingFive">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse"
-                                        data-target="#collapseFive" aria-expanded="false"
-                                        aria-controls="collapseFive">
-                                    <b>Metering</b>
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
-                             data-parent="#accordion">
-                            <div class="card-body">
-                                <b>Script size limit</b>
-                                <p>
-                                    <i>Bitcoin Script</i>, for example has a maximum script size of 10,000 bytes to
-                                    restrict complexity.
-                                </p>
-                                <b>Gas</b>
-                                <p>
-                                    Gas considerations are important when making external and untrusted calls, as it
-                                    raises the possibility of out-of-gas errors. On the other hand, using a gas limit to
-                                    restrict instructions allows for liveness of the network by restricting denial of
-                                    service attacks.
-                                </p>
+                        <div class="card">
+                            <div class="card-header" id="headingFive">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"
+                                        aria-expanded="false" aria-controls="collapseFive">
+                                        <b>Metering</b>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                                <div class="card-body">
+                                    <b>Script size limit</b>
+                                    <p>
+                                        <i>Bitcoin Script</i>, for example has a maximum script size of 10,000 bytes to
+                                        restrict complexity.
+                                    </p>
+                                    <b>Gas</b>
+                                    <p>
+                                        Gas considerations are important when making external and untrusted calls, as
+                                        it
+                                        raises the possibility of out-of-gas errors. On the other hand, using a gas
+                                        limit to
+                                        restrict instructions allows for liveness of the network by restricting denial
+                                        of
+                                        service attacks.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingSix">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse"
-                                        data-target="#collapseSix" aria-expanded="false"
-                                        aria-controls="collapseSix">
-                                    <b>Additional properties</b>
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
-                             data-parent="#accordion">
-                            <div class="card-body">
-                                <b>Contract upgrades</b>
-                                <p>
-                                    Code is immutable in distributed ledgers, and so patterns which attempt to upgrade
-                                    contracts cause issues.
-                                </p>
-                                <b>Randomness</b>
-                                <p>
-                                    On distributed ledgers any local and global state needs to be deterministically
-                                    verifiable by anyone. Hence it is challenging to generate pseudo-random numbers, as
-                                    miners can influence parameters such as timestamps and hashes. A possible solution
-                                    is verifiable delay functions.
-                                </p>
-                                <b>Secrets</b>
-                                <p>
-                                    Information needs to be verifiable, thus secrets are hard to implement. However,
-                                    commit-reveal schemes and zero-knowledge proofs can be used to hide information,
-                                    which is verifiable.
-                                </p>
-                                <b>Best practices</b>
-                                <p>
-                                    Templates can be used to create smart contracts and best practices should be
-                                    applied, to prevent unintended behaviours.
-                                </p>
+                        <div class="card">
+                            <div class="card-header" id="headingSix">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix"
+                                        aria-expanded="false" aria-controls="collapseSix">
+                                        <b>Additional properties</b>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                                <div class="card-body">
+                                    <b>Contract upgrades</b>
+                                    <p>
+                                        Code is immutable in distributed ledgers, and so patterns which attempt to
+                                        upgrade
+                                        contracts cause issues.
+                                    </p>
+                                    <b>Randomness</b>
+                                    <p>
+                                        On distributed ledgers any local and global state needs to be deterministically
+                                        verifiable by anyone. Hence it is challenging to generate pseudo-random
+                                        numbers, as
+                                        miners can influence parameters such as timestamps and hashes. A possible
+                                        solution
+                                        is verifiable delay functions.
+                                    </p>
+                                    <b>Secrets</b>
+                                    <p>
+                                        Information needs to be verifiable, thus secrets are hard to implement.
+                                        However,
+                                        commit-reveal schemes and zero-knowledge proofs can be used to hide
+                                        information,
+                                        which is verifiable.
+                                    </p>
+                                    <b>Best practices</b>
+                                    <p>
+                                        Templates can be used to create smart contracts and best practices should be
+                                        applied, to prevent unintended behaviours.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="field4" class="bg-light">
-    <div class="container">
-        <div class="col-lg-8 mx-auto">
-            <h2>Verification</h2>
-            <img class="diagram" style="border-radius: 5px" src="pics/verification.JPG">
-            <p class="lead" style="padding-top: 8px">There are three main approaches to smart contract verification.
-                Approach (A) bases its analysis on the low-level code which is distributed on the ledger. Approach (B)
-                decompiles the low-level code into an intermediary representation to reason about the
-                properties of the contract. Finally, (C) reasons directly on the high-level code.</p>
-            <div id="accordion2">
-                <div class="card">
-                    <div class="card-header" id="headingSeven">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse"
-                                    data-target="#collapseSeven" aria-expanded="false"
-                                    aria-controls="collapseSeven">
-                                <b>Approach</b>
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
-                         data-parent="#accordion2">
-                        <div class="card-body">
-                            <p class="lead">Any approach can be categorized in one of two classes:</p>
-                            <b>Proof-based verification</b>
-                            <p>
-                                In proof-based verification the system is represented by a set of formulas. These
-                                methods typically derive a formal definition of the specific distributed VM and then try
-                                to verify the properties of the contract.
-                            </p>
-                            <b>Model-based verification</b>
-                            <p>
-                                In this approach, the system being verified is a model. This approach builds a model
-                                directly from the smart contract and then tries to verify the expected properties, by
-                                using an implicit model of the given VM.
-                            </p>
-                            <table class="table table-hover">
-                                <thead>
-                                <tr>
-                                    <th scope="col"></th>
-                                    <th scope="col">Automation</th>
-                                    <th scope="col">Coverage</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <th scope="row">Proof-based verification</th>
-                                    <td>Partial automation</td>
-                                    <td>Full verification</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Model-based verification</th>
-                                    <td>Full Automation</td>
-                                    <td>Partial, property-based verification</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingEight">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight"
-                                    aria-expanded="false" aria-controls="collapseEight">
-                                <b>Automation</b>
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion2">
-                        <div class="card-body">
-                            <b>Partial automation</b>
-                            <p>
-                                Partial automation can be used by defining properties that a specific contract should
-                                fulfil. However, it is beneficial to first define the functionality of a contract and
-                                then verify it rather than finding selected vulnerabilities.
-                            </p>
-                            <b>Full automation</b>
-                            <p>
-                                This has a significant advantage as it uses many pre-defined properties which can be
-                                easily verified on other contracts.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingNine">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse"
-                                    data-target="#collapseNine" aria-expanded="false"
-                                    aria-controls="collapseNine">
-                                <b>Coverage</b>
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapseNine" class="collapse" aria-labelledby="headingNine"
-                         data-parent="#accordion2">
-                        <div class="card-body">
-                            <b>Full verification</b>
-                            <p>
-                                Based on formally defined security semantics. However, no security semantics are
-                                completed, as contract-specific properties are needed to ensure the correctness of a
-                                contract.
-                            </p>
-                            <b>Partial, property-based verification</b>
-                            <p>
-                                Verifies only if selected properties are violated. The properties to be checked are
-                                based on set of known vulnerabilities, and contracts are flagged vulnerable if they
-                                conform to specific prior established patterns. These detections are made using static
-                                analysis.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingTen">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse"
-                                    data-target="#collapseTen" aria-expanded="false"
-                                    aria-controls="collapseTen">
-                                <b>Languages</b>
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapseTen" class="collapse" aria-labelledby="headingTen"
-                         data-parent="#accordion2">
-                        <div class="card-body">
-                            <p>
-                                Majority of tools use <i>EVM bytecode</i> to derive a model of a contract. Moreover,
-                                most
-                                models do not implement all of the opcodes, and so vulnerabilities can remain, hence not
-                                all contracts can be fully verified. There have been major work efforts to build a
-                                formal semantics of the EVM, none of which are fully complete. Some methods use <i>intermediary
-                                representations</i>, these should make future formal
-                                verification easier, as they are being designed with formal verification in mind. This
-                                approach further aids the development of verified compilers. <b>High-level language</b>
-                                are an exception as they build their model based on languages such as <i>Solidity</i> or
-                                <i>Java</i>.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="field5">
-    <div class="container">
-        <div class="row">
+    <section id="field4" class="bg-light">
+        <div class="container">
             <div class="col-lg-8 mx-auto">
-                <h2>Conclusion</h2>
-                <p class="lead">To conclude the 4 main aspects which need to be taken into consideration to enable
-                    for
-                    safer smart contracts are:</p>
-                <h4>Language design</h4>
-                <p>
-                    <b>High-level languages</b> used for smart contracts can be designed in such a way that they
-                    promote
-                    safety in
-                    contracts by:
-                <ul>
-                    <li>Making state changes explicit through using an FSM/automata approach</li>
-                    <li>Restricting the instruction set by only allowing finite loops</li>
-                    <li>Preventing function overloading</li>
-                    <li>Creating explicit types</li>
-                    <li>Promoting pure functions</li>
-                </ul>
-                As an attempt to bring best practices from software engineering and language theory to
-                distributed
-                ledgers, <b>intermediary languages</b> are created with formal verification and optimisation in
-                mind.
-                <b>Low-level languages</b> allow formal verification and give a run-time optimised execution on
-                the
-                distributed ledger. Bringing all these practices together help create safer smart contracts.
-                </p>
-                <h4>Verification</h4>
-                <p>
-                    Contract verification efforts include:
-                <ul>
-                    <li>Categorising and defining security properties</li>
-                    <li>Developing mode-based tools to prevent known bugs</li>
-                    <li>Formal semantics to ensure compliance</li>
-                </ul>
-                <b>Proof-based verification</b> is more challenging than just checking for known
-                vulnerabilities, thus
-                it is only worthwhile for high-value contracts.
-                </p>
-                <h4>Formal semantics and verified compilers</h4>
-                <p>
-                    In the future it would be beneficial to adopt formal semantics in all language levels.
-                    Currently the
-                    focus is developing IR's with formal semantics and and creating such semantics for already
-                    existing
-                    low-level languages. This would simplify verification efforts and prevent ambiguities in code.
-                    Moreover, the creation of verified compilers would be possible, which would make arguing about
-                    contracts in high-level languages less challenging.
-                </p>
-                <h4>Complete security definitions</h4>
-                <p>
-                    General security definitions for various execution environments are required. Furthermore, the
-                    separation of the execution environment from the ledger, would open up the possibility of
-                    verifying
-                    implementations against a formal specification. This could potentially pave the road for
-                    automated
-                    formal verification.
-                </p>
+                <h2>Verification</h2>
+                <img class="diagram" style="border-radius: 5px" src="pics/verification.JPG">
+                <p class="lead" style="padding-top: 8px">There are three main approaches to smart contract
+                    verification.
+                    Approach (A) bases its analysis on the low-level code which is distributed on the ledger. Approach
+                    (B)
+                    decompiles the low-level code into an intermediary representation to reason about the
+                    properties of the contract. Finally, (C) reasons directly on the high-level code.</p>
+                <div id="accordion2">
+                    <div class="card">
+                        <div class="card-header" id="headingSeven">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven"
+                                    aria-expanded="false" aria-controls="collapseSeven">
+                                    <b>Approach</b>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion2">
+                            <div class="card-body">
+                                <p class="lead">Any approach can be categorized in one of two classes:</p>
+                                <b>Proof-based verification</b>
+                                <p>
+                                    In proof-based verification the system is represented by a set of formulas. These
+                                    methods typically derive a formal definition of the specific distributed VM and
+                                    then try
+                                    to verify the properties of the contract.
+                                </p>
+                                <b>Model-based verification</b>
+                                <p>
+                                    In this approach, the system being verified is a model. This approach builds a
+                                    model
+                                    directly from the smart contract and then tries to verify the expected properties,
+                                    by
+                                    using an implicit model of the given VM.
+                                </p>
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"></th>
+                                            <th scope="col">Automation</th>
+                                            <th scope="col">Coverage</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Proof-based verification</th>
+                                            <td>Partial automation</td>
+                                            <td>Full verification</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Model-based verification</th>
+                                            <td>Full Automation</td>
+                                            <td>Partial, property-based verification</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingEight">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight"
+                                    aria-expanded="false" aria-controls="collapseEight">
+                                    <b>Automation</b>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion2">
+                            <div class="card-body">
+                                <b>Partial automation</b>
+                                <p>
+                                    Partial automation can be used by defining properties that a specific contract
+                                    should
+                                    fulfil. However, it is beneficial to first define the functionality of a contract
+                                    and
+                                    then verify it rather than finding selected vulnerabilities.
+                                </p>
+                                <b>Full automation</b>
+                                <p>
+                                    This has a significant advantage as it uses many pre-defined properties which can
+                                    be
+                                    easily verified on other contracts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingNine">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNine"
+                                    aria-expanded="false" aria-controls="collapseNine">
+                                    <b>Coverage</b>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion2">
+                            <div class="card-body">
+                                <b>Full verification</b>
+                                <p>
+                                    Based on formally defined security semantics. However, no security semantics are
+                                    completed, as contract-specific properties are needed to ensure the correctness of
+                                    a
+                                    contract.
+                                </p>
+                                <b>Partial, property-based verification</b>
+                                <p>
+                                    Verifies only if selected properties are violated. The properties to be checked are
+                                    based on set of known vulnerabilities, and contracts are flagged vulnerable if they
+                                    conform to specific prior established patterns. These detections are made using
+                                    static
+                                    analysis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTen">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTen"
+                                    aria-expanded="false" aria-controls="collapseTen">
+                                    <b>Languages</b>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion2">
+                            <div class="card-body">
+                                <p>
+                                    Majority of tools use <i>EVM bytecode</i> to derive a model of a contract.
+                                    Moreover,
+                                    most
+                                    models do not implement all of the opcodes, and so vulnerabilities can remain,
+                                    hence not
+                                    all contracts can be fully verified. There have been major work efforts to build a
+                                    formal semantics of the EVM, none of which are fully complete. Some methods use <i>intermediary
+                                        representations</i>, these should make future formal
+                                    verification easier, as they are being designed with formal verification in mind.
+                                    This
+                                    approach further aids the development of verified compilers. <b>High-level language</b>
+                                    are an exception as they build their model based on languages such as <i>Solidity</i>
+                                    or
+                                    <i>Java</i>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
+
+    <section id="field5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Conclusion</h2>
+                    <p class="lead">To conclude the 4 main aspects which need to be taken into consideration to enable
+                        for
+                        safer smart contracts are:</p>
+                    <h4>Language design</h4>
+                    <p>
+                        <b>High-level languages</b> used for smart contracts can be designed in such a way that they
+                        promote
+                        safety in
+                        contracts by:
+                        <ul>
+                            <li>Making state changes explicit through using an FSM/automata approach</li>
+                            <li>Restricting the instruction set by only allowing finite loops</li>
+                            <li>Preventing function overloading</li>
+                            <li>Creating explicit types</li>
+                            <li>Promoting pure functions</li>
+                        </ul>
+                        As an attempt to bring best practices from software engineering and language theory to
+                        distributed
+                        ledgers, <b>intermediary languages</b> are created with formal verification and optimisation in
+                        mind.
+                        <b>Low-level languages</b> allow formal verification and give a run-time optimised execution on
+                        the
+                        distributed ledger. Bringing all these practices together help create safer smart contracts.
+                    </p>
+                    <h4>Verification</h4>
+                    <p>
+                        Contract verification efforts include:
+                        <ul>
+                            <li>Categorising and defining security properties</li>
+                            <li>Developing mode-based tools to prevent known bugs</li>
+                            <li>Formal semantics to ensure compliance</li>
+                        </ul>
+                        <b>Proof-based verification</b> is more challenging than just checking for known
+                        vulnerabilities, thus
+                        it is only worthwhile for high-value contracts.
+                    </p>
+                    <h4>Formal semantics and verified compilers</h4>
+                    <p>
+                        In the future it would be beneficial to adopt formal semantics in all language levels.
+                        Currently the
+                        focus is developing IR's with formal semantics and and creating such semantics for already
+                        existing
+                        low-level languages. This would simplify verification efforts and prevent ambiguities in code.
+                        Moreover, the creation of verified compilers would be possible, which would make arguing about
+                        contracts in high-level languages less challenging.
+                    </p>
+                    <h4>Complete security definitions</h4>
+                    <p>
+                        General security definitions for various execution environments are required. Furthermore, the
+                        separation of the execution environment from the ledger, would open up the possibility of
+                        verifying
+                        implementations against a formal specification. This could potentially pave the road for
+                        automated
+                        formal verification.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Imperial College London </p>
+        </div>
+
     </div>
 </section>
 
@@ -600,15 +667,16 @@
     <!-- /.container -->
 </footer>
 
-<!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-<!-- Plugin JavaScript -->
-<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-<!-- Custom JavaScript for this theme -->
-<script src="js/scrolling-nav.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="js/scrolling-nav.js"></script>
 
 </body>
 
