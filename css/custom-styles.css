@@ -193,5 +193,6 @@ width: 100% !important;
   background: transparent;
   border: none;
   outline: none;
-  border-bottom: 1px solid gray
+  border-bottom: 1px solid gray;
+  padding: 10px 0;
 }
