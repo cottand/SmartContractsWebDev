@@ -87,6 +87,10 @@ width: 100% !important;
 
 }
 
+.dropdown {
+    padding-left: 10px;
+}
+
 .color{
   color: gray;  /*Why gray?? */
   color: white;
