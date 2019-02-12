@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Other Projects</title>
+    <title>Projects</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -32,20 +32,11 @@
                         <a class="nav-link nav-pills" href="verification.html">Safer Contracts</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-pills js-scroll-trigger text-white" href="#page-top">Other Projects</a>
+                        <a class="nav-link nav-pills js-scroll-trigger text-white" href="#page-top">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-pills" href="aboutDominik.html">About Dominik</a>
                     </li>
-                    <!--<li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#field1">Cool navbar field 1</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#field2">Field 2</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#field3">Field 3</a>
-                </li>-->
                 </ul>
             </div>
         </div>
@@ -83,11 +74,11 @@
                         guarantees and without the need to either trust a third-party or bootstrap a
                         permissioned blockchain as intermediary.</p>
                     <p class="lead">
-                    <a href="https://www.xclaim.io/" target="_blank" style="padding-left:30px;">
-                        Project Website ➜</a>
-                    <p class="lead">
-                    <a href="https://github.com/crossclaim/" target="_blank" style="padding-left:30px;">
-                        Project git ➜</a>
+                        <a href="https://www.xclaim.io/" target="_blank" style="padding-left:30px;">
+                            Project Website ➜</a>
+                        <p class="lead">
+                            <a href="https://github.com/crossclaim/" target="_blank" style="padding-left:30px;">
+                                Project git ➜</a>
 
                 </div>
             </div>
@@ -110,8 +101,8 @@
                         developers.
                     </p>
                     <p class="lead">
-                    <a href="https://github.com/nud3l/smart-contract-specification" target="_blank" style="padding-left:30px;">
-                      Project git ➜</a>
+                        <a href="https://github.com/nud3l/smart-contract-specification" target="_blank" style="padding-left:30px;">
+                            Project git ➜</a>
 
                 </div>
             </div>
@@ -131,32 +122,41 @@
                         participants in the protocol.</p>
 
                     <p class="lead">
-                    <a href="https://www.linkedin.com/in/florian-apfelbeck-00139674/" target="_blank" style="padding-left:30px;">
-                      Florian Apfelbeck on LinkedIn ➜</a>
-                    <p class="lead">
-                    <a href="https://medium.com/@apfelbeck.florian/secure-multiparty-computation-enabling-privacy-preserving-machine-learning-ffef396b8ca2"
-                    target="_blank" style="padding-left:30px;">
-                      Medium article ➜</a>
+                        <a href="https://www.linkedin.com/in/florian-apfelbeck-00139674/" target="_blank" style="padding-left:30px;">
+                            Florian Apfelbeck on LinkedIn ➜</a>
+                        <p class="lead">
+                            <a href="https://medium.com/@apfelbeck.florian/secure-multiparty-computation-enabling-privacy-preserving-machine-learning-ffef396b8ca2"
+                                target="_blank" style="padding-left:30px;">
+                                Medium article ➜</a>
 
                 </div>
             </div>
         </div>
     </section>
+
     <section id="field4" class="bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <h2>dInvest: a social hedge fund in Ethereum</h2>
-                    <p class="lead">Selecting a suitable financial investment, ethical
-                        and social criteria are becoming critical success factors. The
-                        core issue is finding a suitable framework for sustainable and
-                        profitable investment in combination with full transparency over
-                        the decision process and transactions. We are working on a
-                        proof-of-concept to realize profitable, transparent and socially
-                        responsible investment.</p>
+                    <h2>Layered TCR</h2>
                     <p class="lead">
-                    <a href="https://dominikharz.me/blockchain/2017/01/10/dinvest.html" target="_blank" style="padding-left:30px;">
-                        Blog post ➜</a>
+                        Layer 2 protocols on Ethereum typically use collateral to prevent agents to misbehave. This
+                        includes for example Plasma, payment channels (Raiden, PERUN), verifiable computation (TrueBit)
+                        or cross-chain protocols like XClaim. There are two problems with the current approach to
+                        collateral: unknown risk and depency on outside events.
+                        <br>
+                        <br>
+                        The idea of a Verifiable Layered TCR (VLTCR) is to assign agents into layers based on their
+                        actions. A cryptoeconomic protocol has in an abstract sense a list of desired and undesired
+                        actions. In case an agent performs an undesired action, its collateral is usually "slashed",
+                        i.e. the collateral is destroyed or the "victim" of the undesired action is refunded with that
+                        collateral. Contrary, if the agent performs a desired action, it is usually rewarded with a fee
+                        that the consumer of the service is paying (e.g. a solver in TrueBit).
+                    </p>
+                    <p class="lead">
+                        <a href="https://github.com/nud3l/layered-tcr" target="_blank" style="padding-left:30px;">
+                            Project git ➜</a>
+                    </p>
 
                 </div>
             </div>
@@ -166,34 +166,28 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <h2>Breaking CAPTCHAs using deep learning</h2>
-                    <p class="lead">The aim of the project is to break CAPTCHAs using
-                        deep learning technologies. Initially the focus lies on simple
-                        CAPTCHAs to evaluate the performance and move into more complex
-                        CAPTCHAs. The training dataset is generated from an open source
-                        CAPTCHA generation software. Tensorflow is used to create, train
-                        and test the network.
+                    <h2>DAGsim: Simulation of DAG-based distributed ledger protocols</h2>
+                    <p class="lead">
+                        Scalability of distributed ledgers is a key adoption factor. As an alternative to
+                        blockchain-based protocols, directed acyclic graph (DAG) protocols are proposed with the
+                        intention to allow a higher volume of transactions to be processed. However, there is still
+                        limited understanding of the behaviour and security considerations of DAG-based systems.
+                        <br>
+                        <br>
+                        This paper presents an asynchronous, continuous time, and multi-agent simulation framework for
+                        DAG-based cryptocurrencies. Honest and semi-honest actors were modeled in the system to analyse
+                        the behaviour of one specific cryptocurrency, IOTA.
                     </p>
 
                     <p class="lead">
-                    <a href="https://dominikharz.me/ai/2017/01/12/breakingcaptcha.html" target="_blank" style="padding-left:30px;">
-                        Blog post ➜</a>
+                        <a href="https://eprint.iacr.org/2018/1062" target="_blank" style="padding-left:30px;">
+                            Research paper ➜</a>
+                    </p>
 
                 </div>
             </div>
         </div>
-    <!-- </section>
-    <section id="field100">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <h2>Privacy-preserving machine learning</h2>
-                    <p class="lead">Dummy Text.</p>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
+    </section>
     <!-- Footer -->
     <footer class="py-5 bg-dark">
         <div class="container">
