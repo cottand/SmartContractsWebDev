@@ -182,3 +182,15 @@ width: 100% !important;
     background-color: #c82333;
     text-align: left;
 }
+
+.form{
+  margin-top: 10px;
+}
+
+.formField{
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray
+}
