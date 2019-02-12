@@ -21,6 +21,10 @@ section {
 
 img {
     padding: 10px 0;
+}
+
+.img-on-page {
+    padding: 10px 0;
     width: 100%;
 }
 
