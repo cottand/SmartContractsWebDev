@@ -48,7 +48,7 @@
     <header class="index-header text-white">
         <div>
             <div class="container text-center text-white bg-dark-semitransparent" style="border-radius: 6px">
-                <h1>Smart Contracts In The Age Of Autonomous Agents</h1>
+                <h1>Smart contracts in the age of autonomous agents</h1>
                 <p class="lead">A PhD research project by Dominik Harz</p>
             </div>
         </div>
@@ -122,16 +122,23 @@
     </section>
     <section id="field2" class="bg-light">
           <div class="container">
-                <div class="row">
                   <div class="col-lg-8 mx-auto">
                       <h2>Get in Touch!</h2>
                       <p>If you are interested by the research project and want to collaborate or have any questions you can find Dominik’s contact information on the About page.
                       </p>
                       <p>Or contact him now below!
                       </p>
+                      <form id="contactForm" method="post" action="">
+                      <input name="name" type="text" class="formField" placeholder="Name" required>
+                      <br>
+                      <input name="email" type="email" class="formField" placeholder="Email Address" required>
+                      <br>
+                      <textarea name="message" class="formField" placeholder="Message" rows="4" required></textarea>
+                      <br>
+                      <input type="submit" class="submitForm" value="SEND MESSAGE">
+                    </form>
                   </div>
                 </div>
-          </div>
     </section>
     <!-- Footer -->
     <footer class="py-5 bg-dark">

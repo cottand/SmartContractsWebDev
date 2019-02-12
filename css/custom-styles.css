@@ -65,7 +65,7 @@ width: 100% !important;
 }
 .index-header {
     background-color: #1CBBB6;
-    background-image: url("../pics/neon6.jpg");
+    background-image: url("../pics/indexWP1.jpg");
     background-size: 100%;
     width: 100%;
     margin-right: 10px;
@@ -181,4 +181,16 @@ width: 100% !important;
 .futureWork-style{
     background-color: #c82333;
     text-align: left;
+}
+
+.form{
+  margin-top: 10px;
+}
+
+.formField{
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray
 }
