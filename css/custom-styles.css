@@ -56,11 +56,16 @@ width: 100% !important;
 }
 .index-header {
     background-color: #1CBBB6;
-    background-image: url("../pics/neon6.jpg");
+    background-image: url("../pics/neon11.jpg");
     background-size: 100%;
     width: 100%;
     margin-right: 10px;
 
+}
+
+.credits {
+    float: left;
+    padding-right: 8px;
 }
 
 .otherProjects-style-header{
