@@ -63,6 +63,11 @@ width: 100% !important;
 
 }
 
+.credits {
+    float: left;
+    padding-right: 8px;
+}
+
 .otherProjects-style-header{
 
     background-color: #353dbb;
