@@ -74,11 +74,11 @@
                         guarantees and without the need to either trust a third-party or bootstrap a
                         permissioned blockchain as intermediary.</p>
                     <p class="lead">
-                    <a href="https://www.xclaim.io/" target="_blank" style="padding-left:30px;">
-                        Project Website ➜</a>
-                    <p class="lead">
-                    <a href="https://github.com/crossclaim/" target="_blank" style="padding-left:30px;">
-                        Project git ➜</a>
+                        <a href="https://www.xclaim.io/" target="_blank" style="padding-left:30px;">
+                            Project Website ➜</a>
+                        <p class="lead">
+                            <a href="https://github.com/crossclaim/" target="_blank" style="padding-left:30px;">
+                                Project git ➜</a>
 
                 </div>
             </div>
@@ -101,8 +101,8 @@
                         developers.
                     </p>
                     <p class="lead">
-                    <a href="https://github.com/nud3l/smart-contract-specification" target="_blank" style="padding-left:30px;">
-                      Project git ➜</a>
+                        <a href="https://github.com/nud3l/smart-contract-specification" target="_blank" style="padding-left:30px;">
+                            Project git ➜</a>
 
                 </div>
             </div>
@@ -122,12 +122,12 @@
                         participants in the protocol.</p>
 
                     <p class="lead">
-                    <a href="https://www.linkedin.com/in/florian-apfelbeck-00139674/" target="_blank" style="padding-left:30px;">
-                      Florian Apfelbeck on LinkedIn ➜</a>
-                    <p class="lead">
-                    <a href="https://medium.com/@apfelbeck.florian/secure-multiparty-computation-enabling-privacy-preserving-machine-learning-ffef396b8ca2"
-                    target="_blank" style="padding-left:30px;">
-                      Medium article ➜</a>
+                        <a href="https://www.linkedin.com/in/florian-apfelbeck-00139674/" target="_blank" style="padding-left:30px;">
+                            Florian Apfelbeck on LinkedIn ➜</a>
+                        <p class="lead">
+                            <a href="https://medium.com/@apfelbeck.florian/secure-multiparty-computation-enabling-privacy-preserving-machine-learning-ffef396b8ca2"
+                                target="_blank" style="padding-left:30px;">
+                                Medium article ➜</a>
 
                 </div>
             </div>
@@ -138,20 +138,24 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <h2>A specification language for smart contract verification</h2>
-                    <p class="lead">Smart contracts are still prone to security vulnerabilities. Apart
-                        from using automated tools to verify for known bugs, it can be beneficial to
-                        verify that a smart contract is correct with respect to some specification.
-                        However, using formal verification tools is mostly combined with a steep
-                        learning curve and requires a deep understanding of the tools. This projects
-                        aims to develop a domain-specific language for writing specifications to
-                        verify smart contracts. The idea is to abstract away some of the complexities
-                        so that formal verification can become a standard tool for smart contract
-                        developers.
+                    <h2>Layered TCR</h2>
+                    <p class="lead">
+                        Layer 2 protocols on Ethereum typically use collateral to prevent agents to misbehave. This
+                        includes for example Plasma, payment channels (Raiden, PERUN), verifiable computation (TrueBit)
+                        or cross-chain protocols like XClaim. There are two problems with the current approach to
+                        collateral: unknown risk and depency on outside events
+
+                        The idea of a Verifiable Layered TCR (VLTCR) is to assign agents into layers based on their
+                        actions. A cryptoeconomic protocol has in an abstract sense a list of desired and undesired
+                        actions. In case an agent performs an undesired action, its collateral is usually "slashed",
+                        i.e. the collateral is destroyed or the "victim" of the undesired action is refunded with that
+                        collateral. Contrary, if the agent performs a desired action, it is usually rewarded with a fee
+                        that the consumer of the service is paying (e.g. a solver in TrueBit). However, this is a black
+                        and white option.
                     </p>
                     <p class="lead">
-                    <a href="https://github.com/nud3l/smart-contract-specification" target="_blank" style="padding-left:30px;">
-                      Project git ➜</a>
+                        <a href="https://github.com/nud3l/layered-tcr" target="_blank" style="padding-left:30px;">
+                            Project git ➜</a>
 
                 </div>
             </div>
